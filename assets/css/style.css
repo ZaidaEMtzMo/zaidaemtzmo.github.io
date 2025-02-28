@@ -149,6 +149,16 @@ main a:visited {
     color: #410a80; /* Different color for visited links */
 }
 
+/* Change color when hovering */
+main a:hover {
+    color: #7700ff; /* Example: Lighter purple on hover */
+}
+
+/* Change color when clicking (active state) */
+main a:active {
+    color: #ff00f2; /* Example: Orange when clicked */
+}
+
 /* Style for the footer section */
 footer {
     text-align: center;
