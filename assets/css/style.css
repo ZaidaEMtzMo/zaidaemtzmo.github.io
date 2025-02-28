@@ -138,6 +138,17 @@ nav ul li a {
     background: #b87dfa;
 }
 
+/* Default link style */
+main a {
+    color: #7700ff; /* Change this to your preferred color */
+    text-decoration: underline; /* Removes underline */
+}
+
+/* Change color for visited links */
+main a:visited {
+    color: #410a80; /* Different color for visited links */
+}
+
 /* Style for the footer section */
 footer {
     text-align: center;
@@ -147,4 +158,5 @@ footer {
     color: #4C42B0;
     line-height: 1;
     height: auto;
+    font-style: italic;
 }
