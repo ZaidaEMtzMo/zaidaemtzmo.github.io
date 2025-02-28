@@ -7,7 +7,7 @@ lang: fr
 
 # Bienvenue sur mon site Web !
 
-This is my personal space where I share my thoughts, interests, and research.
+Ceci est mon espace personnel où je partage mes réflexions, mes intérêts et mes recherches.
 
 ## Derniers Articles
 {% assign filtered_posts = site.posts | where: "lang", page.lang | sort: "date" | reverse %}
