@@ -10,10 +10,25 @@ body {
 /* Style for the header section */
 header {
     background: #8982D0;
-    color: #1705dd;
     padding: 10px;
     text-align: center;
 }
+
+/* Style for the header links
+header a {
+    color: white !important;
+    text-decoration: none; /* Optional: Removes underline */
+/* } */
+
+/* Style for the header h1: My name */
+header h1 {
+    color: #3C3388; /* Change this to any color you want */
+    font-weight: bold; /* Optional: Makes it stand out */
+    text-decoration: none; /* Optional: Removes underline */
+}
+
+/* header a:hover { /*
+    color: #b87dfa; /* Optional: Changes color when hovered */
 
 /* Style for the navigation list */
 nav ul {
@@ -24,13 +39,31 @@ nav ul {
 /* Style for the navigation list items */
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 /* Style for the navigation links */
 nav ul li a {
-    color: #8982D0;
+    color: #ffffff;
     text-decoration: none;
+}
+
+/* Style for the social media icons */
+.social-links {
+    margin-top: 10px; /* Adds space between header and icons */
+    text-align: center; /* Ensures icons are centered */
+}
+
+.social-links a {
+    color: #4C42B0; /* Purple color */
+    font-size: 20px; /* Adjust size (default is 24px) */
+    margin: 0 15px; /* Increases space between icons */
+    text-decoration: none; /* Removes underline */
+    display: inline-block; /* Ensures proper spacing */
+}
+
+.social-links a:hover {
+    color: #7700ff; /* Lighter purple on hover */
 }
 
 /* Style for the footer section */
@@ -39,5 +72,5 @@ footer {
     margin-top: 20px;
     padding: 10px;
     background: #E9E5FB;
-    color: #3C3388;
+    color: #4C42B0;
 }

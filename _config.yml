@@ -1,16 +1,13 @@
-title: "Zaida Martinez"
-author: "Zaida Martinez"
+title: "Zaida Escila Martínez Moreno"
+author: "Zaida Escila Martínez Moreno"
 description: "A personal website to share my interests and research"
 baseurl: ""
 url: "https://zaidaemtzmo.github.io"
 
 # Theme (you can customize this)
-theme: jekyll-theme-cayman
+theme: null
 
 # Navigation Links
-# nav_links:
-#   Home: "/"
-#   Research: "/research"
 nav_links:
   Home: "{{ site.baseurl }}/"
   Research: "{{ site.baseurl }}/research"
