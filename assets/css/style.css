@@ -1,3 +1,4 @@
+/* Style for the body of the document */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -5,28 +6,38 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+
+/* Style for the header section */
 header {
-    background: #333;
-    color: white;
+    background: #8982D0;
+    color: #1705dd;
     padding: 10px;
     text-align: center;
 }
+
+/* Style for the navigation list */
 nav ul {
     list-style: none;
     padding: 0;
 }
+
+/* Style for the navigation list items */
 nav ul li {
     display: inline;
     margin: 0 10px;
 }
+
+/* Style for the navigation links */
 nav ul li a {
-    color: white;
+    color: #8982D0;
     text-decoration: none;
 }
+
+/* Style for the footer section */
 footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background: #333;
-    color: white;
+    background: #E9E5FB;
+    color: #3C3388;
 }

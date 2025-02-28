@@ -1,0 +1,59 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Jekyll Server",
+            "type": "shell",
+            "command": "C:\\Ruby33-x64\\bin\\jekyll.bat",
+            "args": ["serve"],
+            "options": {
+                "cwd": "B:/OneDrive/MyWebsite/zaidaemtzmo.github.io",
+                "shell": {
+                    "executable": "C:\\Windows\\System32\\cmd.exe"
+                }
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Start Jekyll development server"
+        },
+        {
+            "label": "Run Jekyll Server (Bundle)",
+            "type": "shell",
+            "command": "C:\\Ruby33-x64\\bin\\bundle.bat",
+            "args": ["exec", "jekyll", "serve"],
+            "options": {
+                "cwd": "B:/OneDrive/MyWebsite/zaidaemtzmo.github.io",
+                "shell": {
+                    "executable": "C:\\Windows\\System32\\cmd.exe"
+                }
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "detail": "Run Jekyll server with bundle"
+        },
+        {
+            "label": "Run Jekyll Server (Bundle - Incremental)",
+            "type": "shell",
+            "command": "C:\\Ruby33-x64\\bin\\bundle.bat",
+            "args": ["exec", "jekyll", "serve", "--incremental"],
+            "options": {
+                "cwd": "B:/OneDrive/MyWebsite/zaidaemtzmo.github.io",
+                "shell": {
+                    "executable": "C:\\Windows\\System32\\cmd.exe"
+                }
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "detail": "Run Jekyll server with bundle and incremental builds"
+        }
+    ]
+}

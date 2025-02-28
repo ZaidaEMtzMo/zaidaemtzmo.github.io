@@ -5,7 +5,7 @@ baseurl: ""
 url: "https://zaidaemtzmo.github.io"
 
 # Theme (you can customize this)
-theme: minima
+theme: jekyll-theme-cayman
 
 # Navigation Links
 # nav_links:
@@ -14,3 +14,10 @@ theme: minima
 nav_links:
   Home: "{{ site.baseurl }}/"
   Research: "{{ site.baseurl }}/research"
+
+sass:
+  style: none
+
+exclude:
+  - _sass
+  - assets/css/*.scss
