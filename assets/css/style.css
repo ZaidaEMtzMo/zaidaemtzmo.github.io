@@ -74,6 +74,7 @@ nav ul li a {
 
 /* Ensures proper spacing for the language dropdown */
 .language-dropdown {
+    position: relative;
     display: flex;
     align-items: center;
     margin-left: auto; /* Moves it to the right */
@@ -92,6 +93,8 @@ nav ul li a {
     text-decoration: none;
     padding: 10px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .dropbtn i {
@@ -102,11 +105,23 @@ nav ul li a {
 .dropdown-content {
     display: none;
     position: absolute;
+    top: 100%;
+    left: 0;
     background: #4C42B0; /* Adjust color */
     min-width: auto;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
     z-index: 1;
     font-size: 14px; /* Adjust font size */
+}
+
+/* Show dropdown on hover */
+.language-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* Style for dropdown links */
@@ -115,11 +130,6 @@ nav ul li a {
     padding: 6px 10px; /* Adjust padding: top/bottom left/right */
     display: block;
     text-decoration: none;
-}
-
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 /* Change link color on hover */
