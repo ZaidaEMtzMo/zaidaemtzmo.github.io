@@ -14,7 +14,11 @@ This is my personal space where I share my thoughts, interests, and research.
 {% assign post_count = filtered_posts | size %}
 
 {% for post in filtered_posts limit:5 %}
-  - [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
+  {% assign lang = post.lang | default: site.lang %}
+  {% assign month_index = post.date | date: "%-m" | minus: 1 %}
+  {% assign month_translated = site.months[lang][month_index] %}
+
+  - [{{ post.title }}]({{ post.url }}) - {{ month_translated }} {{ post.date | date: "%d," }} {{ post.date | date: "%Y" }}
 {% endfor %}
 
 {% if post_count > 5 %}

@@ -26,6 +26,21 @@ defaults:
       path: ""
     values:
       lang: "en"
+  - scope:
+      path: "_posts/en"
+      type: "posts"
+    values:
+      permalink: "/en/all-posts/:year/:month/:day/:title.html"
+  - scope:
+      path: "_posts/es"
+      type: "posts"
+    values:
+      permalink: "/es/all-posts/:year/:month/:day/:title.html"
+  - scope:
+      path: "_posts/fr"
+      type: "posts"
+    values:
+      permalink: "/fr/all-posts/:year/:month/:day/:title.html"
 
 # Navigation Links
 nav_links:
@@ -41,3 +56,9 @@ nav_links:
     Home: "/fr/"
     Research: "/fr/research"
     AllPosts: "/fr/all-posts"
+
+# Month translations
+months:
+  en: [January, February, March, April, May, June, July, August, September, October, November, December]
+  es: [Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre]
+  fr: [Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre]

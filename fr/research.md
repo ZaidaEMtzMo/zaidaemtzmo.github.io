@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Research"
+title: "Recherche"
 permalink: /fr/research/
 lang: fr
 ---

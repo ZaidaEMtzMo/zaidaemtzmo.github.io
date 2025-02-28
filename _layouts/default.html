@@ -41,10 +41,45 @@
 
         // Function to change language
         function changeLanguage(selectedLang) {
-            localStorage.setItem("language", selectedLang);
-            let pathParts = window.location.pathname.split('/').slice(2).join('/'); // Get the path after the current language
-            let newUrl = `/${selectedLang}/${pathParts}`;
-            window.location.href = newUrl;
+            localStorage.setItem("language", selectedLang); // Save selected language
+
+            // let currentPath = window.location.pathname.split('/');
+            let currentPath = window.location.pathname.split('/').filter(p => p.length > 0);
+            let currentLang = currentPath[0]; // Detect current language folder (en, es, fr)
+
+            // If on the home page or a section like "research", switch the language normally
+            if (currentPath.length === 1) {
+                window.location.href = `/${selectedLang}/`;
+                return;
+            }
+            
+            // If the page is a section (e.g., "/en/research/"), keep the path and switch the language
+            if (currentPath.length >= 2 && currentPath[1] !== "all-posts") {
+                let section = currentPath.slice(1).join('/');
+                window.location.href = `/${selectedLang}/${section}/`;
+                return;
+            }
+
+            if (currentPath[1] === "all-posts" && isNaN(currentPath[2])) {
+                let section = currentPath.slice(1).join('/');
+                window.location.href = `/${selectedLang}/${section}/`;
+                return;
+            }
+
+            // Check if the current path is a post based on "/posts/"
+            if (currentPath[1] === "all-posts" && !isNaN(currentPath[2])) {
+                let year = currentPath[2];  // Get the year (e.g., "2025")
+                let month = currentPath[3]; // Get the month (e.g., "02")
+                let day = currentPath[4];   // Get the day (e.g., "27")
+                let postSlug = currentPath[5]; // Get the post filename (e.g., "always-a-biologist.html")
+
+                // Redirect to the correct language version of the post
+                window.location.href = `/${selectedLang}/all-posts/${year}/${month}/${day}/${postSlug}`;
+                return;
+            }
+
+            // Default fallback: just switch the language folder
+            window.location.href = `/${selectedLang}/`;
         }
 
         // Add event listener to language dropdown
@@ -74,16 +109,6 @@
                 <a href="https://facebook.com/ZEMartinezMoreno/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
                 <a href="https://instagram.com/zaida_escila/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
-            <!-- <div class="language-dropdown">    
-                <li class="dropdown">
-                    <a href="#" class="dropbtn"><i class="fas fa-language"></i></a>
-                    <div class="dropdown-content">
-                        <a href="/en/">English</a>
-                        <a href="/es/">Español</a>
-                        <a href="/fr/">Français</a>
-                    </div>
-                </li>
-            </div> -->
             <div class="language-dropdown">    
                 <a href="#" class="dropbtn"><i class="fas fa-language"></i></a>
                 <div class="dropdown-content">

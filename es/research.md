@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Research"
+title: "Investigación"
 permalink: /es/research/
 lang: es
 ---
