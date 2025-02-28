@@ -4,17 +4,40 @@ description: "A personal website to share my interests and research"
 baseurl: ""
 url: "https://zaidaemtzmo.github.io"
 
-# Theme (you can customize this)
+# Theme setup
 theme: null
-
-# Navigation Links
-nav_links:
-  Home: "{{ site.baseurl }}/"
-  Research: "{{ site.baseurl }}/research"
-
 sass:
   style: none
-
 exclude:
   - _sass
   - assets/css/*.scss
+
+# Default language
+lang: en
+
+# Supported languages
+languages:
+  - en
+  - es
+  - fr
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: "en"
+
+# Navigation Links
+nav_links:
+  en:
+    Home: "/en/"
+    Research: "/en/research"
+    AllPosts: "/en/all-posts"
+  es:
+    Home: "/es/"
+    Research: "/es/research"
+    AllPosts: "/es/all-posts"
+  fr:
+    Home: "/fr/"
+    Research: "/fr/research"
+    AllPosts: "/fr/all-posts"

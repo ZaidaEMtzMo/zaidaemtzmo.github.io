@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Research
-permalink: /research/
+title: "Research"
+permalink: /fr/research/
+lang: fr
 ---
 
-# Scientific Posters and Research
+# FRENCH Scientific Posters and Research
 
 Here, I share my research and scientific posters.
 

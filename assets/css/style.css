@@ -14,11 +14,15 @@ header {
     text-align: center;
 }
 
-/* Style for the header links
-header a {
-    color: white !important;
-    text-decoration: none; /* Optional: Removes underline */
-/* } */
+/* Ensure the header content is in a flex container */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pushes social links to center and language to the right */
+    position: relative;
+    width: 100%;
+    padding: 5px 20px;
+}
 
 /* Style for the header h1: My name */
 header h1 {
@@ -50,8 +54,10 @@ nav ul li a {
 
 /* Style for the social media icons */
 .social-links {
-    margin-top: 10px; /* Adds space between header and icons */
-    text-align: center; /* Ensures icons are centered */
+    display: flex;
+    gap: 10px; /* Space between icons */
+    justify-content: center; /* Center icons */
+    flex-grow: 1; /* Makes it expand to center */
 }
 
 .social-links a {
@@ -66,11 +72,68 @@ nav ul li a {
     color: #7700ff; /* Lighter purple on hover */
 }
 
+/* Ensures proper spacing for the language dropdown */
+.language-dropdown {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Moves it to the right */
+    padding-right: 20px;
+}
+
+/* Dropdown container */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* Dropdown button */
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropbtn i {
+    font-size: 30px; /* Adjust icon size */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #4C42B0; /* Adjust color */
+    min-width: auto;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 14px; /* Adjust font size */
+}
+
+/* Style for dropdown links */
+.dropdown-content a {
+    color: white;
+    padding: 6px 10px; /* Adjust padding: top/bottom left/right */
+    display: block;
+    text-decoration: none;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change link color on hover */
+.dropdown-content a:hover {
+    background: #b87dfa;
+}
+
 /* Style for the footer section */
 footer {
     text-align: center;
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 1px;
+    padding: 2px;
     background: #E9E5FB;
     color: #4C42B0;
+    line-height: 1;
+    height: auto;
 }

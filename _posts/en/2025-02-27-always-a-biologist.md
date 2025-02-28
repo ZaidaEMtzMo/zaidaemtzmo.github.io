@@ -2,6 +2,7 @@
 layout: post
 title: "Once a biologist, always a biologist"
 date: 2025-02-27
+lang: en
 ---
 
 In my undergrad, I studied Biology. Although I specialized in cellular biology, I did spend a good time enjoying nature. Don't believe me? Look at these pictures:

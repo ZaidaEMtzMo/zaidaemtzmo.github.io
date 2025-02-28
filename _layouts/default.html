@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +7,83 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Retrieve stored language or default to English
+        let storedLang = localStorage.getItem("language") || "en";
+
+        // Fix issue where language might be undefined
+        if (!["en", "es", "fr"].includes(storedLang)) {
+            storedLang = "en";
+            localStorage.setItem("language", storedLang);
+        }
+
+        // Set the correct lang attribute in the HTML document
+        document.documentElement.lang = storedLang;
+
+        // If the user is at the root `/`, redirect them to their stored language
+        if (window.location.pathname === "/") {
+            window.location.href = `/${storedLang}/`;
+        }
+
+        // Define translations (must match `_data/translations.yml`)
+        const translations = {
+            en: { home: "Home", research: "Research" },
+            es: { home: "Inicio", research: "Investigación" },
+            fr: { home: "Accueil", research: "Recherche" }
+        };
+
+        // Update navigation links dynamically and ensure they always point to the correct language
+        document.getElementById("home-link").setAttribute("href", `/${storedLang}/`);
+        document.getElementById("home-link").textContent = translations[storedLang].home;
+        document.getElementById("research-link").setAttribute("href", `/${storedLang}/research/`);
+        document.getElementById("research-link").textContent = translations[storedLang].research;
+
+        // Function to change language
+        function changeLanguage(selectedLang) {
+            localStorage.setItem("language", selectedLang);
+            let pathParts = window.location.pathname.split('/').slice(2).join('/'); // Get the path after the current language
+            let newUrl = `/${selectedLang}/${pathParts}`;
+            window.location.href = newUrl;
+        }
+
+        // Add event listener to language dropdown
+        document.querySelectorAll(".dropdown-content a").forEach(link => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                let selectedLang = this.getAttribute("href").split("/")[1]; // Extract language code
+                changeLanguage(selectedLang);
+            });
+        });
+    });
+</script>
 <body>
     <header>
-        <!-- <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1> -->
         <h1>{{ site.title }}</h1>
         <nav>
             <ul>
-                <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                <li><a href="{{ '/research/' | relative_url }}">Research</a></li>
+                <li><a id="home-link" href="/en/"></a></li>
+                <li><a id="research-link" href="/en/research/"></a></li>
             </ul>
         </nav>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/zemm" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/ZaidaEMtzMo" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://orcid.org/0000-0001-6388-8738" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
-            <a href="https://facebook.com/ZEMartinezMoreno/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://instagram.com/zaida_escila/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <div class="header-container">
+            <div class="social-links">
+                <a href="https://linkedin.com/in/zemm" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ZaidaEMtzMo" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://orcid.org/0000-0001-6388-8738" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
+                <a href="https://facebook.com/ZEMartinezMoreno/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/zaida_escila/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="language-dropdown">    
+                <li class="dropdown">
+                    <a href="#" class="dropbtn"><i class="fas fa-language"></i></a>
+                    <div class="dropdown-content">
+                        <a href="/en/">English</a>
+                        <a href="/es/">Español</a>
+                        <a href="/fr/">Français</a>
+                    </div>
+                </li>
+            </div>
         </div>
     </header>
     
