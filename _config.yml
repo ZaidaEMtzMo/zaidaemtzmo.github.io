@@ -1,13 +1,16 @@
 title: "Zaida Martinez"
 author: "Zaida Martinez"
 description: "A personal website to share my interests and research"
-baseurl: "/zaidamartinez.github.io"
+baseurl: ""
 url: "https://zaidaemtzmo.github.io"
 
 # Theme (you can customize this)
 theme: minima
 
 # Navigation Links
+# nav_links:
+#   Home: "/"
+#   Research: "/research"
 nav_links:
-  Home: "/"
-  Research: "/research"
+  Home: "{{ site.baseurl }}/"
+  Research: "{{ site.baseurl }}/research"
