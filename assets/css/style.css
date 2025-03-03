@@ -9,9 +9,16 @@ body {
 
 /* Style for the header section */
 header {
-    background: #8982D0;
+    /* Set purple background, centering and padding */
+    background-color: #8982D0;
     padding: 10px;
     text-align: center;
+    
+    /* Add background image to header */
+    background-image: url('/assets/images/Brain_LongWave_short_trans4.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100% auto;
 }
 
 /* Ensure the header content is in a flex container */
@@ -21,7 +28,7 @@ header {
     justify-content: space-between; /* Pushes social links to center and language to the right */
     position: relative;
     width: 100%;
-    padding: 5px 20px;
+    padding: 5px 35px; /* Adjusts position of social links: top/bottom left/right */
 }
 
 /* Style for the header h1: My name */
@@ -44,13 +51,15 @@ nav ul {
 /* Style for the navigation list items */
 nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 60px; /* Adjust space between links: top/bottom left/right */
 }
 
 /* Style for the navigation links */
 nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
+    /* color: #ffffff; */
+    color:#6842b0;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 /* Style for the social media icons */
@@ -79,7 +88,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     margin-left: auto; /* Moves it to the right */
-    padding-right: 20px;
+    padding-right: 25px; /* Adjusts space between dropdown and social links */
 }
 
 /* Dropdown container */
@@ -90,7 +99,8 @@ nav ul li a {
 
 /* Dropdown button */
 .dropbtn {
-    color: white;
+    /* color: white; */
+    color: #9464ee;
     text-decoration: none;
     padding: 10px;
     cursor: pointer;
@@ -99,7 +109,7 @@ nav ul li a {
 }
 
 .dropbtn i {
-    font-size: 30px; /* Adjust icon size */
+    font-size: 25px; /* Adjust icon size */
 }
 
 /* Dropdown content (hidden by default) */

@@ -5,10 +5,17 @@ permalink: /fr/research/
 lang: fr
 ---
 
-# FRENCH Scientific Posters and Research
+# Contributions à la recherche
 
-Here, I share my research and scientific posters.
+Explorez mon parcours scientifique à travers ma thèse, mes articles publiés et mes présentations sous forme d’affiches scientifiques, mettant en avant mon travail en biologie cellulaire et en neurosciences.
 
-## Posters
-- [OHBM Poster]({{ "/assets/images/Poster_ZEMM_OHBM2023_final.pdf" | relative_url }})
+## Articles de recherche
+- Voss, P; **<u>Martinez-Moreno, ZE</u>**; Prévost, F; Zeitouni, A; Lopez Valdes, A; de Villers-Sidani, E (2025). Prediction of hearing aid cognitive outcomes in age-related hearing loss. _Frontiers in Aging Neuroscience_ 17:1548526. DOI: [10.3389/fnagi.2025.1548526](https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2025.1548526/full) (Disponible uniquement en anglais) [[PDF]({{ "/assets/images/2025_Vossetal_PredictionHearingAids.pdf" | relative_url }})]
+- Albouy, P; **<u>Martinez-Moreno, ZE</u>**; Hoyer, RS; Zatorre, RJ; Baillet, S (2022). Supramodality of neural entrainment: Rhytmic visual stimulation causally enhances auditory working memory performance. _Science Advances_ 8 (8): eabj9782. DOI: [10.1126/sciadv.abj9782](https://www.science.org/doi/full/10.1126/sciadv.abj9782) (Disponible uniquement en anglais) [[PDF]({{ "/assets/images/2022_Albouyetal_SupramodalityNeuralEntrainment.pdf" | relative_url }})]
+- Falet, JPR; Côté, J; Tarka, V; **<u>Martínez-Moreno, ZE</u>**; Voss, P; de Villers-Sidani, E (2021). Mapping the human auditory cortex using spectrotemporal receptive fields generated with magnetoencephalography. _NeuroImage_ 238: 118222. DOI: [10.1016/j.neuroimage.2021.118222](https://doi.org/10.1016/j.neuroimage.2021.118222) (Disponible uniquement en anglais) [[PDF]({{ "/assets/images/2021_Faletetal_MappingHumanACusingMEG.pdf" | relative_url }})]
 
+## Affiches scientifiques
+- Congrès annuel de l'_Organization of Human Brain Mapping_ (2023): "Influence of age and perceptual training on cortical auditory processing" (Disponible uniquement en anglais) [[PDF]({{ "/assets/images/Poster_ZEMM_OHBM2023_final.pdf" | relative_url }})]
+
+## Thèses
+- Thèse de licence (2017): _"Activation précoce de l’autophagie en réponse aux dommages à l’ADN causés par l’Irinotecan dans des cellules de mammifères"_ (Disponible uniquement en espagnol) [[PDF]({{ "/assets/images/UndergradThesis.pdf" | relative_url }})]
