@@ -18,5 +18,6 @@ Explore my research journey through my thesis, published articles, and scientifi
 - _Organization of Human Brain Mapping_ Annual Meeting (2023): "Influence of age and perceptual training on cortical auditory processing" [[PDF]({{ "/assets/images/Poster_ZEMM_OHBM2023_final.pdf" | relative_url }})]
 
 ## Thesis
+- Graduate thesis (2025): _"Influence of age and perceptual training on cortical auditory processing"_. DOI: [10.82308/49920](https://doi.org/10.82308/49920) [[PDF]({{ "/assets/images/DoctoralThesis.pdf" | relative_url }})]
 - Undergraduate thesis (2017): _"Early activation of autophagy in response to DNA damage caused by Irinotecan in mammal cells"_ (Spanish only) [[PDF]({{ "/assets/images/UndergradThesis.pdf" | relative_url }})]
 

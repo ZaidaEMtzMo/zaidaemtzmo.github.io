@@ -18,4 +18,5 @@ Explorez mon parcours scientifique à travers ma thèse, mes articles publiés e
 - Congrès annuel de l'_Organization of Human Brain Mapping_ (2023): "Influence of age and perceptual training on cortical auditory processing" (Disponible uniquement en anglais) [[PDF]({{ "/assets/images/Poster_ZEMM_OHBM2023_final.pdf" | relative_url }})]
 
 ## Thèses
+- Thèse de doctorat (2025): _"Influence of age and perceptual training on cortical auditory processing"_ (Disponible uniquement en anglais). DOI: [10.82308/49920](https://doi.org/10.82308/49920) [[PDF]({{ "/assets/images/DoctoralThesis.pdf" | relative_url }})]
 - Thèse de licence (2017): _"Activation précoce de l’autophagie en réponse aux dommages à l’ADN causés par l’Irinotecan dans des cellules de mammifères"_ (Disponible uniquement en espagnol) [[PDF]({{ "/assets/images/UndergradThesis.pdf" | relative_url }})]

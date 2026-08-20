@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Una vez bióloga, siempre bióloga"
+title: "Bióloga, desde principio a fin"
 date: 2025-02-27
 lang: es
 ---
